@@ -7,48 +7,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
   <title>Template</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <a href="home">(O)(O)</a>
-      <input type="text" placeholder="Find...">
-      <input type="submit" value=">">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li class="dropdown">
-          <a href="#">Services</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Banking</a></li>
-            <li><a href="#">Insurance</a></li>
-            <li><a href="#">Teaching </a></li>
-            <li><a href="#">Childcare</a></li>
-            <li><a href="#">Architecture</a></li>
-            <li><a href="#">Training</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">Products</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Magazines</a></li>
-            <li><a href="#">Toothpaste</a></li>
-            <li><a href="#">Food</a></li>
-            <li><a href="#">Shampoo</a></li>
-            <li><a href="#">Candy</a></li>
-            <li><a href="#">Laundry </a></li>
-          </ul>
-        </li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="home">(O)(O)</a>
+        <input type="text" placeholder="Find...">
+        <input type="submit" value=">">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Banking</a></li>
+              <li><a href="#">Insurance</a></li>
+              <li><a href="#">Teaching </a></li>
+              <li><a href="#">Childcare</a></li>
+              <li><a href="#">Architecture</a></li>
+              <li><a href="#">Training</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Products</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Magazines</a></li>
+              <li><a href="#">Toothpaste</a></li>
+              <li><a href="#">Food</a></li>
+              <li><a href="#">Shampoo</a></li>
+              <li><a href="#">Candy</a></li>
+              <li><a href="#">Laundry </a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="banner cycle-slideshow">
+      <img src="../../images/hilton-arlington.jpg" />
+      <img src="../../images/laptop.jpg" />
+      <img src="../../images/hilton-arlington.jpg" />
+      <div class="center">
+        <a href="#" id="prev">Prev</a>
+        <a href="#" id="next">Next</a>
+      </div>
+    </section>
+
+    <!-- Include necessary CSS and JS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/theme.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
+
+
+    <!-- Initialize the slideshow -->
+    <script>
+      $(document).ready(function () {
+        $('.cycle-slideshow').cycle({
+          slides: '> img',
+          next: '#next',
+          prev: '#prev'
+        });
+      });
+    </script>
 
 
 
+    <article>
+      <main>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum error excepturi fuga laboriosam, quis quo
+          sint blanditiis officia veritatis! Ducimus alias, hic facere rem cumque, laborum ipsam, ipsa labore soluta
+          veritatis voluptatum nesciunt tenetur beatae numquam nostrum asperiores impedit delectus aperiam natus tempora
+          atque ea voluptates! Nulla magni sint ipsa blanditiis, nostrum id, provident a modi ducimus iusto repellendus!
+          Repellendus fuga beatae illum recusandae, doloribus pariatur? Animi molestiae voluptatibus harum veniam
+          reprehenderit perferendis ut facere reiciendis, eius, mollitia ullam deserunt porro veritatis molestias
+          eligendi rerum exercitationem id autem saepe quae esse magnam recusandae distinctio? Minus dolor perspiciatis
+          rem delectus molestiae itaque officia placeat culpa et ipsa voluptates consequuntur, animi id quam qui fuga,
+          accusamus voluptas neque eum veniam eligendi unde. Saepe cupiditate eum possimus quis minus earum doloribus ex
+          distinctio necessitatibus. Culpa adipisci, architecto voluptates reiciendis excepturi, minima a, harum odio
+          consequatur dolores autem! Earum minima, officia ipsa voluptatum cupiditate obcaecati sequi? Quod cum unde
+          deserunt officiis, numquam est!</p>
+      </main>
+    </article>
 </body>
 
 </html>
