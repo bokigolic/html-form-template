@@ -38,16 +38,19 @@ nav ul li a {
   text-decoration: none;
   color: #333;
 }
+
 nav ul li:hover {
-  background-color: #928c8c; /* Change background color when hovered */
-  transition: background-color 0.3s ease-in-out; /* Add transition effect */
+  background-color: #928c8c;
+  /* Change background color when hovered */
+  transition: background-color 0.3s ease-in-out;
+  /* Add transition effect */
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
   z-index: 999;
-  
+
 
 
 
@@ -66,7 +69,7 @@ nav ul li:hover {
 .dropdown-menu li {
   display: block;
   background-color: black;
-  
+
 
 }
 
@@ -82,36 +85,55 @@ nav ul li:hover {
   align-items: center;
   justify-content: center;
 
- 
+
 }
-  /* BAnner*/
-  .banner {
-    position: relative;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  
-  .banner img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .center {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .center a {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px;
-    background-color: #fff;
-    color: #333;
-    font-size: 14px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
+
+/* BAnner*/
+.banner {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.center {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.content-holder {
+  background-color: #e1dcdc;
+  height: 500px;
+}
+
+.content {
+  width: 70%;
+  height: auto;
+  padding: 25px;
+  background-color: rgb(206, 206, 177);
+}
+
+.content h1 {
+  font-size: 25px;
+}
+
+.content p {}
