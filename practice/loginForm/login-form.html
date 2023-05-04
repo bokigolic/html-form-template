@@ -9,24 +9,23 @@
 </head>
 
 <body>
-  <form method="POST">
+  <form name="myForm" onsubmit="loginMe(); return false ">
     <table>
       <tr>
         <td>Username: </td>
-        <td><input type="text" name="u-name" required /></td>
+        <td><input type="text" name="u_name" required /></td>
       </tr>
       <tr>
         <td>Password: </td>
-        <td><input type="password" name="u-pass" required /></td>
+        <td><input type="password" name="u_pass" required /></td>
       </tr>
       <tr>
         <td></td>
-        <td><input type="submit" name="u-login" value="Login to countinue" /></td>
+        <td><input type="submit" name="u_login" value="Login to countinue" /></td>
       </tr>
-
     </table>
   </form>
-
+<script src="index.js"></script>
 </body>
 
 </html>
